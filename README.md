@@ -61,115 +61,25 @@
 
 ---
 
-## 🚀 Installation
+### 📸 Screenshots
 
-### Prerequisites
-
-- PHP >= 8.1
-- Composer
-- Node.js >= 18
-- MySQL
-
-### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/your-username/cinema-booking.git
-cd cinema-booking
-
-### Step 2: Backend Setup (Laravel)
-
-cd backend
-
-# Install dependencies
-composer install
-
-# Copy environment file
-cp .env.example .env
-
-# Generate application key
-php artisan key:generate
-
-# Configure database in .env file
-# DB_DATABASE=cinema_booking
-# DB_USERNAME=root
-# DB_PASSWORD=
-
-# Run migrations and seeders
-php artisan migrate --seed
-
-# Create storage link for images
-php artisan storage:link
-
-# Start the development server
-php artisan serve
-
-API will be available at: http://localhost:8000
-
-### Step 3: Frontend Setup (Nuxt 3)
-
-cd frontend
-
-# Install dependencies
-npm install
-
-# Create .env file
-echo "API_BASE_URL=http://localhost:8000/api" > .env
-
-# Start development server
-npm run dev
-
-Frontend will be available at: http://localhost:3000
-
-# 📸 Screenshots
-(https://./screenshots/1.png)
-(https://./screenshots/2.png)
-(https://./screenshots/3.png)
-(https://./screenshots/5.png)
-
-# 🔑 Default Admin Credentials
-
-Role	Email	Password
-Admin	admin@legend.com	password
-
-# 📁 Project Structure
-
-cinema-booking/
-│
-├── backend/                     # Laravel API
-│   ├── app/
-│   │   ├── Http/Controllers/   # API Controllers
-│   │   ├── Models/              # Eloquent Models
-│   │   └── ...
-│   ├── database/
-│   │   └── migrations/          # Database migrations
-│   ├── routes/
-│   │   └── api.php              # API Routes
-│   └── storage/app/public/      # Uploaded images
-│
-├── frontend/                    # Nuxt 3 App
-│   ├── components/              # Vue Components
-│   │   ├── admin/               # Admin components
-│   │   └── ui/                  # Reusable UI components
-│   ├── pages/                   # Application pages
-│   │   ├── admin/               # Admin dashboard
-│   │   ├── account/             # User account pages
-│   │   └── ...
-│   ├── stores/                  # Pinia stores
-│   │   ├── auth.js              # Authentication
-│   │   ├── movie.js             # Movie management
-│   │   └── ...
-│   └── layouts/                 # Layout templates
-│
-└── README.md
-
-# 🔗 API Endpoints
-
-Method	Endpoint	Description
-POST	/api/login	User login
-POST	/api/register	User registration
-GET	/api/movies	List movies
-GET	/api/movies/{slug}/showtimes	Get movie showtimes
-GET	/api/seats/availability	Check seat availability
-POST	/api/bookings	Create booking
-POST	/api/payments	Process payment
-GET	/api/user/bookings	Get user tickets
+![Home Page](./screenshots/home.png)
+![](./screenshots/detail.png)
+![](./screenshots/detail1.png)
+![Booking page](./screenshots/booking1.png)
+![](./screenshots/booking2.png)
+![](./screenshots/booking3.png)
+![Admin Page](./screenshots/admin.png)
+![](./screenshots/1.png)
+![](./screenshots/2.png)
+![](./screenshots/3.png)
+![](./screenshots/4.png)
+![](./screenshots/5.png)
+![](./screenshots/6.png)
+![](./screenshots/7.png)
+![](./screenshots/8.png)
+![](./screenshots/9.png)
+![](./screenshots/10.png)
+![](./screenshots/11.png)
+![](./screenshots/12.png)
+![](./screenshots/13.png)
