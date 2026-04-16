@@ -49,3 +49,43 @@ A full-stack movie ticket booking application built with:
 ---
 
 ## 📂 Project Structure
+cinema-booking/
+│
+├── backend/ # Laravel API
+├── frontend/ # Nuxt 3 App
+└── README.md
+
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone project
+
+```bash
+git clone https://github.com/your-username/cinema-booking.git
+cd cinema-booking
+
+2. Backend Setup (Laravel)
+cd backend
+
+composer install
+cp .env.example .env
+php artisan key:generate
+
+# Setup DB
+php artisan migrate --seed
+
+php artisan serve
+
+
+3. Frontend Setup (Nuxt 3)
+
+cd frontend
+
+npm install
+npm run dev
+
+🔗 API Base URL
+
+http://localhost:8000/api
