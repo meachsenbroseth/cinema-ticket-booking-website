@@ -1,24 +1,17 @@
+# 🎬 Cinema Booking System
+
 <div align="center">
-  
-  # 🎬 Cinema Booking System
-  
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  
-  <p align="center">
-    <strong>A full-featured movie ticket booking platform with real-time seat selection</strong>
-  </p>
-  
-  <p align="center">
-    <a href="#-features">Features</a> •
-    <a href="#-tech-stack">Tech Stack</a> •
-    <a href="#-installation">Installation</a> •
-    <a href="#-screenshots">Screenshots</a>
-  </p>
-  
+
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Nuxt](https://img.shields.io/badge/Nuxt.js-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+**A full-featured movie ticket booking platform with real-time seat selection**
+
+[Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Screenshots](#-screenshots)
+
 </div>
 
 ---
@@ -52,28 +45,19 @@
 ## 🛠️ Tech Stack
 
 ### Backend
-┌─────────────────────────────────────────────────────────┐
-│ Laravel 11.x │
-│ ├── RESTful API │
-│ ├── Sanctum Authentication (Token-based) │
-│ ├── Eloquent ORM │
-│ ├── MySQL Database │
-│ └── File Storage (Posters/Banners) │
-└─────────────────────────────────────────────────────────┘
-
-text
+- Laravel 11.x (RESTful API)
+- Laravel Sanctum (Authentication)
+- Eloquent ORM
+- MySQL Database
+- File Storage (Posters/Banners)
 
 ### Frontend
-┌─────────────────────────────────────────────────────────┐
-│ Nuxt 3 (Vue 3) │
-│ ├── Composition API │
-│ ├── Pinia State Management │
-│ ├── Tailwind CSS Styling │
-│ ├── Radix Vue UI Components │
-│ └── Lucide Icons │
-└─────────────────────────────────────────────────────────┘
-
-text
+- Nuxt 3 (Vue 3)
+- Composition API
+- Pinia (State Management)
+- Tailwind CSS
+- Radix Vue UI Components
+- Lucide Icons
 
 ---
 
@@ -91,8 +75,9 @@ text
 ```bash
 git clone https://github.com/your-username/cinema-booking.git
 cd cinema-booking
-Step 2: Backend Setup (Laravel)
-bash
+
+### Step 2: Backend Setup (Laravel)
+
 cd backend
 
 # Install dependencies
@@ -117,10 +102,11 @@ php artisan storage:link
 
 # Start the development server
 php artisan serve
+
 API will be available at: http://localhost:8000
 
-Step 3: Frontend Setup (Nuxt 3)
-bash
+### Step 3: Frontend Setup (Nuxt 3)
+
 cd frontend
 
 # Install dependencies
@@ -131,22 +117,22 @@ echo "API_BASE_URL=http://localhost:8000/api" > .env
 
 # Start development server
 npm run dev
+
 Frontend will be available at: http://localhost:3000
 
-📸 Screenshots
-<div align="center">
-https://./screenshots/1.png	https://./screenshots/2.png
-Home Page	Movie Details
-https://./screenshots/3.png	https://./screenshots/4.png
-Seat Selection	Checkout
-https://./screenshots/5.png	
-My Tickets	
-</div>
-🔑 Default Admin Credentials
+# 📸 Screenshots
+(https://./screenshots/1.png)
+(https://./screenshots/2.png)
+(https://./screenshots/3.png)
+(https://./screenshots/5.png)
+
+# 🔑 Default Admin Credentials
+
 Role	Email	Password
 Admin	admin@legend.com	password
-📁 Project Structure
-text
+
+# 📁 Project Structure
+
 cinema-booking/
 │
 ├── backend/                     # Laravel API
@@ -175,7 +161,9 @@ cinema-booking/
 │   └── layouts/                 # Layout templates
 │
 └── README.md
-🔗 API Endpoints
+
+# 🔗 API Endpoints
+
 Method	Endpoint	Description
 POST	/api/login	User login
 POST	/api/register	User registration
@@ -185,50 +173,3 @@ GET	/api/seats/availability	Check seat availability
 POST	/api/bookings	Create booking
 POST	/api/payments	Process payment
 GET	/api/user/bookings	Get user tickets
-🎯 Future Improvements
-Email confirmation for bookings
-
-Loyalty points system
-
-Movie reviews & ratings
-
-Food & beverage ordering
-
-Mobile app (React Native)
-
-🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-Fork the project
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-<div align="center"> Made with ❤️ by <a href="https://github.com/your-username">Your Name</a> </div> ```
-What makes this README more attractive:
-Badges – Colorful tech stack badges at the top
-
-Visual separators – Clean horizontal rules and emoji icons
-
-Feature tables – Organized feature lists with emojis
-
-ASCII art – Simple boxes for tech stack visualization
-
-Screenshot grid – Clean 2-column layout for images
-
-Project structure – Tree-like visualization
-
-API table – Clear endpoint documentation
-
-Future improvements – Roadmap section
-
-Contributing guide – Professional open-source section
-
-Centered footer – Nice closing with your name
-
-Just replace the placeholder GitHub username and add your actual screenshots to the screenshots/ folder!
